@@ -1,0 +1,135 @@
+html {
+    font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    width: 100%;
+    background: #00a6fb;
+    background: linear-gradient(180deg, #00a6fb 35%, #0582ca 75%, #006494 100%);
+    display: grid;
+    place-content: center;
+}
+
+.weather-card {
+    width: 350px;
+    height: 70dvh;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.weather-search {
+    height: 8%;
+    display: flex;
+}
+
+.weather-search input[type="text"] {
+    font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.weather-search input[type="text"]:focus{
+    outline: none;
+}
+
+.search {
+    font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    width: 25%;
+    padding: 10 15px;
+    border: none;
+    background-color: rgba(228, 117, 13, 0.667);
+    border-radius: 10px;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.weather-information {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-information img {
+    margin-top: 30px;
+    width: 120px;
+    height: auto;
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.state {
+    font-size: 1.2rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.feelslike {
+    font-size: 1.1rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.city {
+    font-style: oblique;
+    color: rgb(63, 61, 61);
+}
+
+.temperature,
+.state,
+.feelslike,
+.city {
+    text-align: center;
+}
+
+footer {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+.personal-info a,
+.api-info a {
+    color: #fff;
+}
+
+.personal-info a:hover,
+.api-info a:hover {
+    cursor: pointer;
+}
+
+.api-info a:visited {
+    color: #fff;
+}

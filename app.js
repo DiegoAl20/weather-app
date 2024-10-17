@@ -1,4 +1,4 @@
-let API_URL = `https://api.weatherapi.com/v1/current.json?key=b59c26bff73f4604bc9204720241906&q=${"Mexico"}`;
+let API_URL = `${import.meta.env.VITE_API_KEY}&q=${"Mexico"}`;
 
 const weatherImg = document.querySelector('.image-weather');
 const buttonSearch = document.querySelector('.search');
@@ -18,7 +18,7 @@ buttonSearch.addEventListener('click', () => {
     const inputText = document.querySelector('.input-text');
     let cityUser = inputText.value;
 
-    API_URL = `https://api.weatherapi.com/v1/current.json?key=b59c26bff73f4604bc9204720241906&q=${cityUser}`;
+    API_URL = `${import.meta.env.VITE_API_KEY}&q=${cityUser}`;
 
     fetchData(API_URL).then(result => {
         weatherImg.src = `https:${result.current.condition.icon}`;
